@@ -61,7 +61,7 @@ VAStatus DdiDecodeFunctions::CreateConfig (
 
     VAStatus status = VA_STATUS_SUCCESS;
     DDI_CODEC_CHK_NULL(configId,   "nullptr configId",   VA_STATUS_ERROR_INVALID_PARAMETER);
-    if(numAttribs > 0)
+    if(numAttribs)
     {
         DDI_CODEC_CHK_NULL(attribList, "nullptr attribList", VA_STATUS_ERROR_INVALID_PARAMETER);
     }
